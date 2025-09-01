@@ -63,6 +63,17 @@ const HomePage = () => {
             <div className="text-white animate-fade-in">BOX</div>
           )}
         </div>
+        
+        {step >= 4 && (
+          <div className="mt-8">
+            <button
+              onClick={() => navigate("/setup")}
+              className="px-8 py-4 bg-game-red hover:bg-red-600 text-white font-bold text-xl rounded transition-colors"
+            >
+              START GAME
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
